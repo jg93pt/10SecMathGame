@@ -1,0 +1,38 @@
+/*Body background-color:*/
+body {
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*color and font-weight:*/
+h2, h3 {
+  color: #fff;
+  font-weight: bold;
+}
+
+h1, h4, h5 {
+  color: #FFFF3B;
+  font-weight: bold;
+}
+
+/*Border for the col div*/
+.container{
+  width: 250px;
+border: 5px dotted #fff;
+}
+
+/*Style Input:*/
+.styleInput {
+  width: 100px;
+  outline: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color:rgba(0, 0, 0, 0);
+  border-bottom: 3px solid #FFFF3B;
+  color: #fff;
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+}

@@ -1,7 +1,7 @@
 $(document).ready( function () {
 /*Global Variable:*/ 
 var currentMathCal;
-var timer = 9;
+var timer = 10;
 var countDown;
 var currentScore = 0;
 var highScore = 0;
@@ -33,7 +33,7 @@ var mathCal = function () {
 var startGame = function () {
   if (!countDown) {
     if (timer === 0) {
-      updateTime(9);
+      updateTime(10);
       updateScore(-currentScore);
     }
  countDown = setInterval(function () {

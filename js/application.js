@@ -12,7 +12,7 @@ var randomNumber = function (Num) {
   return Math.floor(Math.random() * Num);
 }
 /*Number Range Changer*/ 
-$('#number-limit').on('click', function () {
+$('#number-limit').on('click input change', function () {
   numberRange = $('#number-limit').val();
   $('#numberRange').text(numberRange);
 });
@@ -33,7 +33,7 @@ var mathCal = function () {
 var startGame = function () {
   if (!countDown) {
     if (timer === 0) {
-      updateTime(10);
+      updateTime(9);
       updateScore(-currentScore);
     }
  countDown = setInterval(function () {

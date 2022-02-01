@@ -70,7 +70,6 @@ $('#Question').text(currentMathCal.equation);
 
 /*Validate the user Input:*/ 
 $('#userInput').on('keyup', function () {
-  $('#Timer').empty();
   startGame();
  var input = Number($(this).val());
  var result = currentMathCal.answer;

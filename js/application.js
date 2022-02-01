@@ -29,7 +29,25 @@ var mathCal = function () {
   return question;
 }
 
-/*Start Game and Timer Function's:*/
+/*Start Game, Timer, Score Function's:*/
+/*Timer Function's*/
+var updateTime = function (second) {
+  timer += second;
+  $('#Timer').text(timer);
+}
+
+/*Score Function's:*/
+var updateScore = function (point) {
+  currentScore += point;
+  $('#Score').text("Current Score: " + currentScore);
+}
+
+var TotalScore = function (point) {
+  highScore += point;
+  $('#HighScore').text("High Score: " + highScore);
+}
+
+/*Start and Timer Function's:*/
 var startGame = function () {
   if (!countDown) {
     if (timer === 0) {
@@ -46,21 +64,6 @@ var startGame = function () {
   }
 }
 
-var updateTime = function (second) {
-  timer += second;
-  $('#Timer').text(timer);
-}
-
-/*Score Function's:*/
-var updateScore = function (point) {
-  currentScore += point;
-  $('#Score').text("Current Score: " + currentScore);
-}
-
-var TotalScore = function (point) {
-  highScore += point;
-  $('#HighScore').text("High Score: " + highScore);
-}
 
 /*Generate New equation and insert in html:*/
 var generateEquation = function () { 
